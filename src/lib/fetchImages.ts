@@ -11,7 +11,6 @@ export default async function fetchImages(
       headers: {
         Authorization: env.PEXELS_API_KEY,
       },
-      cache: 'no-cache',
     });
 
     if (!res.ok) throw new Error('Fetch Images error!\n');
